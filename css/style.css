@@ -15,6 +15,10 @@ header{
     z-index: 1;
 }
 
+footer{
+    background-color: rgb(29, 29, 29);
+}
+
 main{
     padding: 100px;
 }
@@ -162,4 +166,28 @@ main{
 .line-through{
     text-decoration: line-through;
     font-size: 9px;
+}
+
+.factory{
+    color: white;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.info{
+    padding: 10px 0;
+}
+
+.social{
+    color: white;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.social:first-child{
+    font-weight: 600;
+}
+.item > i{
+    padding: 5px 1px;
 }
