@@ -12,6 +12,11 @@ header{
     background-color: rgb(255, 119, 0);
     position: fixed;
     width: 100%;
+    z-index: 1;
+}
+
+main{
+    padding: 100px;
 }
 
 /* COMMON */
@@ -24,6 +29,8 @@ header{
 .row{
     display: flex;
     width: 100%;
+    gap: 20px 20px;
+    flex-wrap: wrap;
 }
 
 .col-100{
@@ -34,9 +41,10 @@ header{
 }
 
 .col-33{
-    width: calc(100% / 3- 20px);
+    width: calc(100% / 3 - 20px);
 }
 
+/* HEADER */
 
 .logo{
     width: 30%;
@@ -61,4 +69,31 @@ header{
 .categories{
     color: white;
     padding: 20px 5px;
+}
+
+/* MAIN */
+
+.product{
+    position: relative;
+    width: 100%;
+}
+
+.product > img{
+    width: 100%;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.product:hover .hidden{
+    display: block;
+}
+
+.product:hover .show{
+    display: none;
 }
